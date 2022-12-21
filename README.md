@@ -1,6 +1,6 @@
 # nilpointer
 
-`nilpointer` checks for nil returning if the multiple return value contains pointer types.
+`nilpointer` checks for return of nil if pointer type is included in multiple return values.
 
 `nilpointer` was created under the influence of [`nilerr`](https://github.com/gostaticanalysis/nilerr).
 
@@ -15,7 +15,7 @@ go vet -vettool=`which nilpointer` ./...
 
 ## Analyze
 
-Checks for return of nil if multiple return values and pointer type is included.
+Checks for return of nil if pointer type is included in multiple return values.
 
 ```go
 func do() (*int, error) {
