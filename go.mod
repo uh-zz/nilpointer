@@ -1,4 +1,4 @@
-module nilpointer
+module github.com/uh-zz/nilpointer
 
 go 1.19
 
